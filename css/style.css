@@ -72,7 +72,10 @@
     justify-self: center;
     min-height: 15em;
     position: relative;
+    z-index: -1;
   }
+
+  
 
   .headingElementContainer1 > p,
   .headingElementContainer2 > p,
@@ -113,9 +116,23 @@
     color: #bbb;
   }
 
+  .fas,
+  .far {
+    font-size: 22px;
+    color: #777;
+    filter: brightness(200%);
+  }
+
   .headingElementContainer1 {
     flex: 0 1 200px;
     background-image: url(./assets/1.jfif);
+    opacity: 0.5;
+  }
+
+  .headingHover:hover {
+    filter: brightness(120%);
+    transition: 300ms ease-in-out;
+    opacity: 1;
   }
 
   .headingElementContainer2 {
@@ -135,7 +152,7 @@
     text-decoration: none;
   }
 
-  figcaption a {
+  figcaption {
     color: #666;
     margin-left: 50px;
     margin-top: 15px;
