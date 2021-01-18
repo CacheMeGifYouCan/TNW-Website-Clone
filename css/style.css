@@ -17,6 +17,7 @@
 
   .head-icons {
     width: 50%;
+    position: relative;
   }
 
   .logo-img {
@@ -27,9 +28,10 @@
     top: 0;
     z-index: 2;
   }
+
   .under-logo {
     position: fixed;
-    margin-top: 25px;
+    margin-top: 28px;
     margin-left: -8px;
     font-size: 12px;
     text-align: center;
@@ -43,9 +45,9 @@
   .search-icon {
     height: 28px;
     width: 28px;
-    margin-left: 70%;
+    margin-left: 65%;
     padding-top: 15px;
-    padding-right: 25px;
+    padding-right: 18px;
   }
 
   .menu-icon {
