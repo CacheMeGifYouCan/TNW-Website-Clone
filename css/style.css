@@ -1,4 +1,8 @@
 @media only screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+
   #navContainer {
     display: flex;
     flex-direction: row;
@@ -54,18 +58,76 @@
     height: 30px;
     width: 30px;
   }
+
   main {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
-  .headingImage {
-    z-index: 0;
-    height: 50px;
-    width: 50px;
+  .headingElementContainer1,
+  .headingElementContainer2,
+  .headingElementContainer3 {
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
+    min-height: 15em;
+    position: relative;
   }
 
-  gridHeading {
+  .headingElementContainer1 > p,
+  .headingElementContainer2 > p,
+  .headingElementContainer3 > p {
+    justify-items: flex-end;
+    position: absolute;
+    bottom: 20%;
+  }
+
+  .headingTitle,
+  .headingCaption {
+    margin-left: 15px;
+  }
+
+  .headingTitle {
+    justify-items: flex-end;
+    position: absolute;
+    bottom: 15%;
+    color: white;
+    font-size: 14px;
+    font-family: shentox, sans-serif;
+  }
+
+  .headingTitle > strong {
+    font-family: avalon, sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+
+
+  .headingCaption {
+    position: absolute;
+    bottom: 5%;
+    font-family: arsMaquette, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #bbb;
+  }
+
+  .headingElementContainer1 {
+    flex: 0 1 200px;
+    background-image: url(./assets/1.jfif);
+  }
+
+  .headingElementContainer2 {
+    background-image: url(./assets/2.jpg);
+  }
+
+  .headingElementContainer3 {
+    background-image: url(./assets/3.jpg);
+  }
+
+  .gridHeading {
     display: flex;
     flex-direction: column;
   }
+ 
 }
