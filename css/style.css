@@ -57,4 +57,15 @@
   main {
     margin-top: 30px;
   }
+
+  .headingImage {
+    z-index: 0;
+    height: 50px;
+    width: 50px;
+  }
+
+  gridHeading {
+    display: flex;
+    flex-direction: column;
+  }
 }
