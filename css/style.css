@@ -3,39 +3,78 @@
     overflow-x: hidden;
   }
 
-  #navContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 63px;
-    background-color: #fff;
-    top: 0;
-    position: fixed;
+  body {
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 3rem;
-    z-index: 10;
+    overflow-x: hidden;
   }
 
-  .head-logo {
-    width: 50%;
+  /* NavBar */
+  #navContainer {
+    display: flex;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 8px;
+  }
+
+  .bar {
+    display: flex;
+    width: 25px;
+    height: 2.5px;
+    background-color: red;
+    margin: 6px 0;
+  }
+
+  .iconsContainer {
+    display: inline-flex;
+  }
+
+  #menuBtn {
+    margin: 0 0 0 10px;
+  }
+
+  #searchBtn {
+    margin: 5px 10px 0 10px;
+    transform: scale(-1, 1);
+    color: #1c87c9;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+  }
+
+  #searchBtn > a > i {
+    font-size: 25px;
+    color: #666;
   }
 
   .head-icons {
-    width: 50%;
-    position: relative;
+    transform: scale(-1, 1);
+    color: #1c87c9;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
   }
 
   .logo-img {
-    width: 125px;
-    height: 65px;
+    max-width: 100rem;
+    max-height: 50px;
     position: fixed;
     left: 0;
     top: 0;
-    z-index: -3;
   }
 
   .under-logo {
     position: fixed;
-    margin-top: -4px;
+    top: 20;
+    margin-top: 40px;
     margin-left: -8px;
     font-size: 12px;
     text-align: center;
@@ -47,32 +86,11 @@
     z-index: 9;
   }
 
-  .search-icon {
-    height: 28px;
-    width: 28px;
-    margin-left: 75%;
-    padding-top: 10px;
-    padding-right: 18px;
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
-  .menu-icon {
-    height: 30px;
-    width: 30px;
-  }
-
   main {
     margin-top: 50px;
   }
 
+  /* Header Section */
   .gridHeading {
     display: flex;
     flex-direction: column;
@@ -80,14 +98,14 @@
 
   .headingElementContainer1,
   .headingElementContainer2,
-  .headingElementContainer3 {
+  .headingElementContainer3,
+  .advSection {
     background-position: center;
     background-size: cover;
     justify-self: center;
     min-height: 15em;
     position: relative;
-    margin: 0.25em 0 0.25em 0;
-    z-index: -2;
+    margin: 0.25em 0.25em 0.25em 0.25em;
   }
 
   .headingElementContainer1 > p,
@@ -110,6 +128,7 @@
     color: white;
     font-size: 14px;
     font-family: shentox, sans-serif;
+    z-index: 2;
   }
 
   .headingTitle > strong {
@@ -118,8 +137,6 @@
     line-height: 22px;
   }
 
-
-
   .headingCaption {
     position: absolute;
     bottom: 5%;
@@ -127,6 +144,7 @@
     font-size: 12px;
     line-height: 16px;
     color: #bbb;
+    z-index: 2;
   }
 
   .fas,
@@ -136,16 +154,29 @@
     filter: brightness(200%);
   }
 
-  .headingHover:hover {
-    filter: brightness(120%);
-    transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
-    opacity: 1;
+  .overlay {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .overlay:hover {
+    transition: 400ms ease-in-out;
+    opacity: 0.2;
   }
 
   .headingElementContainer1 {
     flex: 0 1 200px;
-    background-image: url(./assets/1.jfif);
-    background-color: rgba(0, 0, 0, 1);
+    background: url(./assets/1.jfif) bottom no-repeat;
+    min-height: 15em;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
   }
 
   .headingElementContainer2 {
@@ -176,6 +207,13 @@
     font-size: 2rem;
   }
 
+  .advSection {
+    display: flex;
+    flex-direction: column;
+    min-height: 20px;
+  }
+
+  /* Latest News Section */
   .gridBody {
     display: flex;
     flex-direction: column;
@@ -195,8 +233,10 @@
 
   .gridBodyContainers {
     width: 100%;
-    height: 88px;
+    min-height: 6em;
+    margin: 0.25em 0.25em 0.25em 0.25em;
   }
+
   ol, ul {
     list-style: none;
     text-align: left;
