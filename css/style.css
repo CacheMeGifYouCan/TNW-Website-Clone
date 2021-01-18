@@ -54,4 +54,7 @@
     height: 30px;
     width: 30px;
   }
+  main {
+    margin-top: 30px;
+  }
 }
