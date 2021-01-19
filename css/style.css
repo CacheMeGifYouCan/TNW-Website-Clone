@@ -246,37 +246,62 @@
     margin-left: -35px;
     line-height: 25px;
   }
+
   #fundingHeader {
     margin-left: 5px;
     color: #f42;
     font-size: 100%;
   }
+
   .investImage {
     height: 60px;
     width: 60px;
     position: absolute;
+    padding-left: 10px;
   }
+
   .investCardName {
     display: inline-block;
     vertical-align: top;
-    margin-top: 8px;
+    margin-top: -12px;
     font-size: 1.4rem;
     background-color: #f42;
     color: #fff;
     height: 30px;
     width: 100%;
+    padding: 10px 0 10px 90px;
     
   }
-  .investCardOption {
-    display: inline ;
+
+  .investCardCaption {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: -30px;
+    font-size: 1rem;
+    color: #000;
+    background: rgba(255,68,34,.08);
+    height: 15%;
+    width: 100%;
+    padding: 10px 0 10px 90px;
+    line-height: 5px;
   }
+
   h4 {
     color: #f42;
     font-weight: 700;
     line-height: 1.25;
   }
+
   #fundingSection {
     display: grid;
     grid-gap: 20px;
+    padding-left: 15px;
   }
+  .fa-tag:before {
+    content: "\f02b";
+
+}
+
+.investCardDetails p {
+  font-size: 13px;
 }
