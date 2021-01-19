@@ -153,21 +153,25 @@
   }
 
   figcaption {
-    color: #666;
+    color: #AAA;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: -15px;
+    position: absolute;
   }
-
+  figcaption > a {
+    color: #AAA;
+  }
   .latest-news a {
-    color: #f42;
+    color: orangered;
     font-weight: 700;
     line-height: 1.1;
     font-size: 2rem;
+    font: bold;
   }
 
   .gridBody {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 5px;
   }
 
   .gridBodyTitle {
@@ -200,6 +204,7 @@
   .investImage {
     height: 60px;
     width: 60px;
+    position: absolute;
   }
   .investCardName {
     display: inline-block;
@@ -209,7 +214,8 @@
     background-color: #f42;
     color: #fff;
     height: 30px;
-    width: 60%;
+    width: 100%;
+    
   }
   .investCardOption {
     display: inline ;
@@ -218,5 +224,9 @@
     color: #f42;
     font-weight: 700;
     line-height: 1.25;
+  }
+  #fundingSection {
+    display: grid;
+    grid-gap: 20px;
   }
 }
