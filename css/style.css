@@ -202,24 +202,51 @@
   figcaption > a {
     color: #AAA;
   }
-  .latest-news a {
+
+  .latest-news > a,
+  #fundingHeader {
     color: orangered;
     font-weight: 700;
     line-height: 1.1;
     font-size: 2rem;
-    font: bold;
   }
+
+  #fundingLinks > li > a {
+    color: #FF4422;
+  }
+
+  .latest-news > a:hover,
+  #fundingHeader:hover,
+  #fundingLinks > li > a:hover {
+    color: #000;
+  }
+
+
 
   .advSection {
     display: flex;
-    flex-direction: column;
+    margin-top: 2rem;
+    flex-direction: row;
     min-height: 20px;
+    align-self: center;
+  }
+
+  .advSection > a > img {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
+    height: 50px;
+    left: 55%;
   }
 
   /* Latest News Section */
+.latest-news
+
   .gridBody {
     display: grid;
     grid-gap: 5px;
+    position: relative;
   }
 
   .gridBodyTitle {
@@ -229,15 +256,30 @@
   }
 
   .gridBodyimg {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     align-self: center;
   }
 
   .gridBodyContainers {
     width: 100%;
-    min-height: 6em;
     margin: 0.25em 0.25em 0.25em 0.25em;
+  }
+
+  .gridBodyContainers > figure {
+    position: absolute;
+    margin-top: 0;
+  }
+
+  .gridBodyTitle > h3 > a {
+    text-decoration: none;
+    color: black;
+    line-height: 18px;
+  }
+
+  .gridBodyTitle > h3 > a:hover {
+    color: #FF4422;
+    text-decoration: underline;
   }
 
   ol, ul {
