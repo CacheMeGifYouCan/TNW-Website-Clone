@@ -38,17 +38,21 @@
   #menuBtn {
     margin: 0 0 0 10px;
     border-left: 1px solid lightgray;
+    padding-left: 10px;
   }
 
   #searchBtn {
-    margin: 5px 10px 0 10px;
-    transform: scale(-1, 1);
+    margin: 0px 0px 0 10px;
+    /* transform: scale(-1, 1); */
     color: #1c87c9;
     -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
+    /* -webkit-transform: scale(-1, 1); */
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     border-left: 1px solid lightgray;
+    padding-left: 13px;
+    padding-top: 7px;
+    padding-right: 5px;
   }
 
   #searchBtn > a > i {
