@@ -213,6 +213,7 @@
 
   #fundingLinks > li > a {
     color: #FF4422;
+    margin-left: -5px;
   }
 
   .latest-news > a:hover,
@@ -241,7 +242,10 @@
   }
 
   /* Latest News Section */
-.latest-news
+
+  .latest-news {
+    margin-left: 20px;
+  }
 
   .gridBody {
     display: grid;
@@ -263,7 +267,7 @@
 
   .gridBodyContainers {
     width: 100%;
-    margin: 0.25em 0.25em 0.25em 0.25em;
+    margin: 0.25em 0.25em 0.25em 1em;
   }
 
   .gridBodyContainers > figure {
@@ -287,12 +291,6 @@
     text-align: left;
     margin-left: -35px;
     line-height: 25px;
-  }
-
-  #fundingHeader {
-    margin-left: 5px;
-    color: #f42;
-    font-size: 100%;
   }
 
   .investImage {
