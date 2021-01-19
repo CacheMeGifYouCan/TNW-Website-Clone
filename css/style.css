@@ -323,7 +323,7 @@
     height: 15%;
     width: 100%;
     padding: 10px 0 10px 90px;
-    line-height: 5px;
+    line-height: 9px;
   }
 
   h4 {
@@ -345,11 +345,27 @@
   }
 
 .investCardDetails p {
-  font-size: 13px;
+  font-size: 15px;
+  
 }
 .investCardDetails2 {
   font-size: 13px;
   display: inline;
+}
+
+.investCardDetails2 > a > p {
+  border-top: 1px solid rgba(255,68,34,.25);
+  padding-top: 15px;
+  color: #555;
+}
+.investCardDetails2 > a > p > span {
+  color: #aaa;
+  padding-left: 3px;
+}
+.investCardCaption > p {
+  color: #000;
+  opacity: .5;
+  font-size: 11px;
 }
 
 }
