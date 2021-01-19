@@ -205,9 +205,8 @@
     margin-top: -15px;
     position: absolute;
   }
-
   figcaption > a {
-    color: #aaa;
+    color: #AAA;
   }
 
   .latest-news > a,
@@ -230,6 +229,8 @@
   .newsTitle2:hover {
     color: #000;
   }
+
+
 
   .advSection {
     display: flex;
@@ -317,6 +318,7 @@
     height: 30px;
     width: 100%;
     padding: 10px 0 5px 90px;
+    
   }
 
   .investCardCaption {
@@ -343,43 +345,35 @@
     grid-gap: 20px;
     margin: 0 15px 0 15px;
   }
-
   .investCardDetails > a > p > span > i {
     font-size: 15px;
     color: black;
     margin-left: 10px;
-    opacity: 0.9;
+    opacity: .9;
   }
 
-  .investCardDetails p {
+.investCardDetails p {
   font-size: 15px;
   
 }
-  .investCardDetails2 {
+.investCardDetails2 {
   font-size: 13px;
   display: inline;
 }
 
-  .investCardDetails2 > a > p {
+.investCardDetails2 > a > p {
   border-top: 1px solid rgba(255,68,34,.25);
   padding-top: 15px;
   color: #555;
 }
-
-  .investCardDetails2 > a > p > span {
+.investCardDetails2 > a > p > span {
   color: #aaa;
   padding-left: 3px;
 }
-
-  .investCardCaption > p {
+.investCardCaption > p {
   color: #000;
   opacity: .5;
   font-size: 11px;
-}
-
-.investCardDetails2 {
-    font-size: 13px;
-    display: inline;
 }
 
 /* NewsSection */
@@ -394,14 +388,15 @@
   text-decoration: none;
   font-size: 18px;
 }
+
 .newsSection {
-margin: 0 15px 0 15px;
-display: flex;
-flex-direction: column;
+  margin: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
 }
+
 #newsContainer1 {
-flex: 0 1 200px;
-background: url(./assets/15.jfif) bottom no-repeat;
+  background: url(./assets/15.jfif) bottom no-repeat;
 }
 #newsContainer2 {
   background: url(./assets/16.png) bottom no-repeat;
@@ -442,16 +437,12 @@ background: url(./assets/15.jfif) bottom no-repeat;
   background-color: #FF4422;
   min-height: 25em;
   padding: 20px;
-  background-color: #FF4422;
-  min-height: 25em;
   position: relative;
   background-position: center;
   background-size: cover;
   justify-self: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 
 
 
@@ -459,17 +450,12 @@ background: url(./assets/15.jfif) bottom no-repeat;
 
 
 
-=======
->>>>>>> Stashed changes
 .newsImageHeading {
   justify-items: flex-end;
   position: absolute;
   bottom: 0;
   left: 0;
-<<<<<<< Updated upstream
   margin: 0 0 0 10px;
-=======
->>>>>>> Stashed changes
   color: white;
   font-size: 14px;
   font-family: shentox, sans-serif;
@@ -486,18 +472,13 @@ background: url(./assets/15.jfif) bottom no-repeat;
 .headingCaption2 {
   position: absolute;
   bottom: 0;
-<<<<<<< Updated upstream
   margin: 0;
-=======
-  margin-left: 0;
->>>>>>> Stashed changes
   font-family: arsMaquette, sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #bbb;
   z-index: 2;
 }
-<<<<<<< Updated upstream
 
 .newsDescription {
   position: relative;
@@ -556,22 +537,18 @@ background: url(./assets/15.jfif) bottom no-repeat;
 footer > div > ul {
   text-align: center;
 }
-
 footer > div > ul > li {
   padding-left: 5px;
   padding-right: 5px;
   color: lightgray;
 }
-
 footer > div > ul > li > a {
   color: lightgray;
 }
-
 .lower-footer > span > img {
-  width:40px;
-  height: 10px;
+  width: 60px;
+  height: 20px;
 }
-
 .upper-footer {
   background-color: #111;
   width: 100%;
@@ -589,7 +566,6 @@ footer > div > ul > li > a {
   .social {
   float: left;
   }
-
   .social a {
     width: 60px;
     height: 60px;
@@ -604,10 +580,14 @@ footer > div > ul > li > a {
   }
   .lower-footer {
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: black;
     color: lightgray;
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0;
+    line-height: 20px;
+    font-size: 13px;
   }
-}
+  .lower-footer > span {
+    display: inline-block;
+  }
