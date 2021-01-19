@@ -444,13 +444,6 @@
   justify-self: center;
 }
 
-
-
-
-
-
-
-
 .newsImageHeading {
   justify-items: flex-end;
   position: absolute;
@@ -499,6 +492,10 @@
   text-decoration: underline;
   text-decoration-color: pink;
 }
+
+.newsList > li > a:hover {
+  color: black;
+}
 .newsDescription > a > img {
   position: absolute;
   top: 0;
@@ -523,7 +520,7 @@
   border-bottom: 1px solid #eee;
   line-height: 19px;
   font-size: 13px;
-  color: #000;
+  color: #444;
 }
 
 .newsList > li {
@@ -594,5 +591,19 @@ footer > div > ul > li > a {
   }
   .lower-footer > span {
     display: inline-block;
+  }
+
+  .deal {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 13px;
+    padding-top: 4px;
+    vertical-align: baseline;
+  }
+  .old {
+    text-decoration: line-through;
+  }
+  .new {
+    color: #555;
   }
 }
