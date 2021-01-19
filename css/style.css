@@ -37,6 +37,7 @@
 
   #menuBtn {
     margin: 0 0 0 10px;
+    border-left: 1px solid lightgray;
   }
 
   #searchBtn {
@@ -47,10 +48,11 @@
     -webkit-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
+    border-left: 1px solid lightgray;
   }
 
   #searchBtn > a > i {
-    font-size: 25px;
+    font-size: 17px;
     color: #666;
   }
 
