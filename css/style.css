@@ -350,38 +350,38 @@
     opacity: .9;
   }
 
-.investCardDetails p {
+  .investCardDetails p {
   font-size: 15px;
   
 }
-.investCardDetails2 {
+  .investCardDetails2 {
   font-size: 13px;
   display: inline;
 }
 
-<<<<<<< Updated upstream
-.investCardDetails2 > a > p {
+  .investCardDetails2 > a > p {
   border-top: 1px solid rgba(255,68,34,.25);
   padding-top: 15px;
   color: #555;
 }
-.investCardDetails2 > a > p > span {
+
+  .investCardDetails2 > a > p > span {
   color: #aaa;
   padding-left: 3px;
 }
-.investCardCaption > p {
+
+  .investCardCaption > p {
   color: #000;
   opacity: .5;
   font-size: 11px;
 }
 
-=======
 /* NewsSection */
-.newsSection {
+  .newsSection {
   margin: 0 15px 0 15px;
 }
 
-#newsContainer1 {
+  #newsContainer1 {
   flex: 0 1 200px;
   background: url(./assets/15.jfif) bottom no-repeat;
   min-height: 20em;
@@ -389,5 +389,63 @@
   background-position: center;
   background-size: cover;
   justify-self: center;
->>>>>>> Stashed changes
+}
+
+footer > div > ul {
+  text-align: center;
+}
+
+footer > div > ul > li {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: lightgray;
+}
+
+footer > div > ul > li > a {
+  color: lightgray;
+}
+
+.lower-footer > span > img {
+  width:40px;
+  height: 10px;
+}
+
+.upper-footer {
+  background-color: #111;
+  width: 100%;
+  height: 145px;
+  padding-top: 35px;
+}
+.upper-footer > ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  font-size: 12px;
+}
+  .social {
+  float: left;
+  }
+
+  .social a {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: center;
+    line-height: 40px;
+    padding: 8px 8px 8px 8px;
+  }
+  .lower-footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding: 40px 0;
+  }
 }
