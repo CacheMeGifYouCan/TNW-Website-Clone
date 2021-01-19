@@ -205,8 +205,9 @@
     margin-top: -15px;
     position: absolute;
   }
+
   figcaption > a {
-    color: #AAA;
+    color: #aaa;
   }
 
   .latest-news > a,
@@ -229,8 +230,6 @@
   .newsTitle2:hover {
     color: #000;
   }
-
-
 
   .advSection {
     display: flex;
@@ -318,7 +317,6 @@
     height: 30px;
     width: 100%;
     padding: 10px 0 5px 90px;
-    
   }
 
   .investCardCaption {
@@ -345,22 +343,19 @@
     grid-gap: 20px;
     margin: 0 15px 0 15px;
   }
+
   .investCardDetails > a > p > span > i {
     font-size: 15px;
     color: black;
     margin-left: 10px;
-    opacity: .9;
+    opacity: 0.9;
   }
 
 .investCardDetails p {
-  font-size: 15px;
-  
-}
-.investCardDetails2 {
-  font-size: 13px;
-  display: inline;
+    font-size: 15px;
 }
 
+<<<<<<< Updated upstream
 .investCardDetails2 > a > p {
   border-top: 1px solid rgba(255,68,34,.25);
   padding-top: 15px;
@@ -374,6 +369,11 @@
   color: #000;
   opacity: .5;
   font-size: 11px;
+=======
+.investCardDetails2 {
+    font-size: 13px;
+    display: inline;
+>>>>>>> Stashed changes
 }
 
 /* NewsSection */
@@ -397,6 +397,7 @@
 
 #newsContainer1 {
   background: url(./assets/15.jfif) bottom no-repeat;
+<<<<<<< Updated upstream
 }
 #newsContainer2 {
   background: url(./assets/16.png) bottom no-repeat;
@@ -437,12 +438,17 @@
   background-color: #FF4422;
   min-height: 25em;
   padding: 20px;
+=======
+  background-color: #FF4422;
+  min-height: 25em;
+>>>>>>> Stashed changes
   position: relative;
   background-position: center;
   background-size: cover;
   justify-self: center;
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -450,12 +456,17 @@
 
 
 
+=======
+>>>>>>> Stashed changes
 .newsImageHeading {
   justify-items: flex-end;
   position: absolute;
   bottom: 0;
   left: 0;
+<<<<<<< Updated upstream
   margin: 0 0 0 10px;
+=======
+>>>>>>> Stashed changes
   color: white;
   font-size: 14px;
   font-family: shentox, sans-serif;
@@ -472,13 +483,18 @@
 .headingCaption2 {
   position: absolute;
   bottom: 0;
+<<<<<<< Updated upstream
   margin: 0;
+=======
+  margin-left: 0;
+>>>>>>> Stashed changes
   font-family: arsMaquette, sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #bbb;
   z-index: 2;
 }
+<<<<<<< Updated upstream
 
 .newsDescription {
   position: relative;
@@ -532,4 +548,6 @@
   color: orangered;
   font-size: 10px;
   line-height: 18px;
+=======
+>>>>>>> Stashed changes
 }
