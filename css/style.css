@@ -335,7 +335,7 @@
   #fundingSection {
     display: grid;
     grid-gap: 20px;
-    padding-left: 15px;
+    margin: 0 15px 0 15px;
   }
   .investCardDetails > a > p > span > i {
     font-size: 15px;
@@ -353,6 +353,7 @@
   display: inline;
 }
 
+<<<<<<< Updated upstream
 .investCardDetails2 > a > p {
   border-top: 1px solid rgba(255,68,34,.25);
   padding-top: 15px;
@@ -368,4 +369,19 @@
   font-size: 11px;
 }
 
+=======
+/* NewsSection */
+.newsSection {
+  margin: 0 15px 0 15px;
+}
+
+#newsContainer1 {
+  flex: 0 1 200px;
+  background: url(./assets/15.jfif) bottom no-repeat;
+  min-height: 20em;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  justify-self: center;
+>>>>>>> Stashed changes
 }
