@@ -3,11 +3,11 @@
   font-family: Avalon;
 }
 @font-face {
-  src: url(./assets/Shentox/Shentox\ W04\ Regular/Shentox);
+  src: url(./assets/Shentox/@font-face/5c773d1586db24bd45dfd4af3a4542e7.ttf);
   font-family: Shentox;
 }
 @font-face {
-  src: url(./assets/font/ARSMaquettePro-Black.ttf);
+  src: url(./assets/font/ARSMaquettePro-Regular.ttf);
   font-family: ARS_Maquette_Reg;
 }
 @font-face {
@@ -15,8 +15,16 @@
   font-family: ARS_Maquette_Bold;
 }
 
-h2 {
+h2, h4 {
   font-family: Avalon, sans-serif;
+}
+
+.upper-footer {
+  font-family: Shentox, sans-serif;
+}
+
+body {
+  font-family: ARS_Maquette_Reg, sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -285,7 +293,7 @@ h2 {
   }
 
   .gridBodyTitle {
-    font-size: 100%;
+    font-size: 85%;
     margin-top: -100px;
     margin-left: 50px;
   }
@@ -376,7 +384,8 @@ h2 {
   }
 
 .investCardDetails p {
-  font-size: 15px;
+  font-size: 13px;
+  color: #555;
   
 }
 .investCardDetails2 {
@@ -584,7 +593,7 @@ footer > div > ul > li > a {
   flex-direction: row;
   width: 100%;
   height: 30%;
-  font-size: 12px;
+  font-size: 13px;
 }
   .social {
   float: left;
