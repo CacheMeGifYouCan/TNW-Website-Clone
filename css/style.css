@@ -85,10 +85,11 @@
     text-align: center;
     color: rgb(163, 162, 162);
     background-color: rgba(0, 0, 0, 0.925);
-    width: 106px;
+    width: 103px;
     height: 23px;
     padding-top: 12px;
     z-index: 9;
+    padding-left: 3px;
   }
 
   main {
