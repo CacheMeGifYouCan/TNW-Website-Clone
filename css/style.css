@@ -798,6 +798,22 @@ header {
   width: 65%;
 }
 
+.gridBody {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gridBodyContainers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trump {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+}
+
 .gridHeading {
   flex-direction: row;
   flex-wrap: nowrap;
