@@ -691,14 +691,15 @@ footer > div > ul > li > a {
   }
   #navContainer-second > ul {
     display: flex;
-    margin-right: 20px;
-    margin-left: -25px;
+    margin-right: 15px;
+    margin-left: -30px;
     margin-top: 1px;
   }
 
   #navContainer-second > ul > li > a {
-    color: lightgray;
-    padding-left: 5px;
+    color: #808080;
+    padding-left: 10px;
+
   }
   ol, ul {
     list-style: none;
@@ -735,7 +736,7 @@ footer > div > ul > li > a {
  }
 
  #navContainer-third > ul > li > a {
-  color: lightgray;
+  color: #aaaaaa;
   padding-left: 25px;
 }
 }
