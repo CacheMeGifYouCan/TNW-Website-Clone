@@ -874,5 +874,14 @@ header {
   margin-top: 2rem;
 }
 
+#fundingSectionItems {
+  position: relative;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  padding: 35px 0;
 }
 }
