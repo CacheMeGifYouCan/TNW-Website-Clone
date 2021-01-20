@@ -425,6 +425,7 @@ body {
   margin: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
+  object-fit: contain;
 }
 
 #newsContainer1 {
@@ -464,10 +465,10 @@ body {
 #newsContainer7,
 #newsContainer8,
 #newsContainer9 {
-  flex: 0 1 200px;
+  flex: 1 1 200px;
   min-height: 20em;
   background-color: #FF4422;
-  min-height: 25em;
+  min-width: 23em;
   padding: 20px;
   position: relative;
   background-position: center;
