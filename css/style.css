@@ -309,8 +309,10 @@ body {
     padding: 0 20px 0 5px;
   }
 
-  .gridBodyTitle {
-    font-size: 11px;
+  .gridBodyTitle,
+  .gridBodyimg > figure {
+    font-size: 12px;
+    font-weight: bolder;
     line-height: 18px;
     margin-top: -100px;
     margin-left: 50px;
