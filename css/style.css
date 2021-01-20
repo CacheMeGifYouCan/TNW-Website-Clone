@@ -738,8 +738,6 @@ footer > div > ul > li > a {
 }
 }
 
-}
-
 @media (min-width: 1200px) {
   .gridHeading {
     flex-direction: row;
@@ -769,4 +767,5 @@ footer > div > ul > li > a {
   #navContainer-second {
     display: none;
   }
+}
 }
