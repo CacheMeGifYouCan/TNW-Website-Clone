@@ -757,39 +757,37 @@ header {
   color: #aaaaaa;
   padding-left: 25px;
 }
+.gridHeading {
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
-
-@media (min-width: 1200px) {
-  .gridHeading {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100rem;
-  }
-  .headingHover1 {
-    flex-basis: 60%;
-    flex-direction: column;
-    display: flex;
-  }
-  .headingHover2 {
-    flex-basis: 20%;
-  }
-  .headingHover3 {
-    flex-basis: 20%;
-  }
-  .headingElementContainer1 {
-    flex-basis: 30%;
-  }
-  .headingElementContainer2 {
-    flex-basis: 30%;
-  }
-  .headingElementContainer3 {
-    flex-basis: 33%;
-  }
-  #navContainer {
-    display: none;
-  }
-  #navContainer-second {
-    display: none;
-  }
+.headingLgContainer {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 60%;
+  object-position: center;
+}
+.headingHover1 {
+  flex-basis: 85%;
+  flex-direction: row;
+  display: flex;
+}
+.headingHover2 {
+  flex-basis: 20%;
+}
+.headingHover3 {
+  flex-basis: 20%;
+}
+.headingElementContainer1 {
+  flex-basis: 100%;
+}
+#navContainer {
+  display: none;
+}
+#navContainer-second {
+  display: none;
+}
 }
 }
