@@ -811,7 +811,7 @@ header {
 .trump {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 5px;
+  padding: 16px;
 }
 
 .gridHeading {
