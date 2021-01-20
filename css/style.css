@@ -108,7 +108,6 @@ footer > div > ul > li > a {
     display: inline-block;
   }
 
-@media only screen and (max-width: 767px) {
   #navContainer-second {
     display: none;
   }
@@ -150,10 +149,8 @@ footer > div > ul > li > a {
 
   #searchBtn {
     margin: 0px 0px 0 10px;
-    /* transform: scale(-1, 1); */
     color: #1c87c9;
     -moz-transform: scale(-1, 1);
-    /* -webkit-transform: scale(-1, 1); */
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     border-left: 1px solid lightgray;
@@ -378,7 +375,6 @@ footer > div > ul > li > a {
   .gridBodyTitle,
   .gridBodyimg > figure {
     font-size: 12px;
-    font-weight: bolder;
     line-height: 18px;
     margin-top: -100px;
     margin-left: 50px;
@@ -812,4 +808,45 @@ footer > div > ul > li > a {
     display: inline-block;
   }
 
+  .deal {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 13px;
+    padding-top: 4px;
+    vertical-align: baseline;
+  }
+  .old {
+    text-decoration: line-through;
+  }
+  .new {
+    color: #555;
+  }
+
+@media (min-width: 1024px) {
+  #navContainer {
+    display: none;
+  }
+  #navContainer-second {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #000;
+    height: 30px;
+    font-size: 14px;
+    line-height: 2px;
+  }
+  #navContainer-second > ul {
+    display: flex;
+    margin-right: 7px;
+    margin-left: -40px;
+  }
+
+  #navContainer-second > ul > li > a {
+    color: lightgray;
+    padding-left: 5px;
+  }
+  ol, ul {
+    list-style: none;
+}
 }
