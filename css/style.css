@@ -689,8 +689,8 @@ footer > div > ul > li > a {
   }
   #navContainer-second > ul {
     display: flex;
-    margin-right: 7px;
-    margin-left: -40px;
+    margin-right: 20px;
+    margin-left: -25px;
   }
 
   #navContainer-second > ul > li > a {
@@ -705,19 +705,35 @@ footer > div > ul > li > a {
     grid-column: 2;
     grid-row: 2;
     display: flex;
+    font-family: Shentox;
     justify-content: space-between;
+    height: 45px;
+    color: darkgray;
+    font-size: 14px;
+    line-height: 1px;
   }
   #navContainer-third > ul {
     display: flex;
-    margin-right: 7px;
-    margin-left: -40px;
+    margin-right: 15px;
+    margin-left: -45px;
+    padding-top: 8px;
+  }
+
+  #navContainer-third > ul :hover {
+    color: black;
   }
 
   #navContainer-third > ul > li > a > i {
   font-size: 17px;
   color: #666;
+  margin-top: -5px;
  }
+
+ #navContainer-third > ul > li > a {
+  color: lightgray;
+  padding-left: 25px;
 }
+
 
 
 
