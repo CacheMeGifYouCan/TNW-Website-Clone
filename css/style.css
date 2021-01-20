@@ -378,7 +378,6 @@ footer > div > ul > li > a {
   .gridBodyTitle,
   .gridBodyimg > figure {
     font-size: 12px;
-    font-weight: bolder;
     line-height: 18px;
     margin-top: -100px;
     margin-left: 50px;
@@ -796,4 +795,51 @@ footer > div > ul > li > a {
     display: inline-block;
   }
 
+<<<<<<< Updated upstream
+=======
+  .deal {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 13px;
+    padding-top: 4px;
+    vertical-align: baseline;
+  }
+  .old {
+    text-decoration: line-through;
+  }
+  .new {
+    color: #555;
+  }
+}
+
+@media (min-width: 1024px) {
+  #navContainer {
+    display: none;
+  }
+  #navContainer-second {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #000;
+    height: 30px;
+    font-size: 14px;
+    line-height: 2px;
+  }
+  #navContainer-second > ul {
+    display: flex;
+    margin-right: 7px;
+    margin-left: -40px;
+  }
+
+  #navContainer-second > ul > li > a {
+    color: lightgray;
+    padding-left: 5px;
+  }
+  ol, ul {
+    list-style: none;
+}
+
+
+>>>>>>> Stashed changes
 }
