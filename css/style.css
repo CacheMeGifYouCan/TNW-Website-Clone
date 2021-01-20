@@ -108,7 +108,6 @@ footer > div > ul > li > a {
     display: inline-block;
   }
 
-@media only screen and (max-width: 767px) {
   #navContainer-second {
     display: none;
   }
@@ -150,10 +149,8 @@ footer > div > ul > li > a {
 
   #searchBtn {
     margin: 0px 0px 0 10px;
-    /* transform: scale(-1, 1); */
     color: #1c87c9;
     -moz-transform: scale(-1, 1);
-    /* -webkit-transform: scale(-1, 1); */
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     border-left: 1px solid lightgray;
@@ -795,8 +792,6 @@ footer > div > ul > li > a {
     display: inline-block;
   }
 
-<<<<<<< Updated upstream
-=======
   .deal {
     color: #aaa;
     font-size: 14px;
@@ -810,7 +805,6 @@ footer > div > ul > li > a {
   .new {
     color: #555;
   }
-}
 
 @media (min-width: 1024px) {
   #navContainer {
@@ -839,7 +833,4 @@ footer > div > ul > li > a {
   ol, ul {
     list-style: none;
 }
-
-
->>>>>>> Stashed changes
 }
