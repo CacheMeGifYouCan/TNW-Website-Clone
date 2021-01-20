@@ -213,17 +213,9 @@ footer > div > ul > li > a {
     background-position: center;
     background-size: cover;
     justify-self: center;
-    min-height: 15em;
+    min-height: 12em;
     position: relative;
     margin: 0.25em 0.25em 0.25em 0.25em;
-  }
-
-  .headingElementContainer1 > p,
-  .headingElementContainer2 > p,
-  .headingElementContainer3 > p {
-    justify-items: flex-end;
-    position: absolute;
-    bottom: 20%;
   }
 
   .headingTitle,
@@ -280,10 +272,11 @@ footer > div > ul > li > a {
     opacity: 0.2;
   }
 
+
+
   .headingElementContainer1 {
     flex: 0 1 200px;
     background: url(./assets/1.jfif) bottom no-repeat;
-    min-height: 15em;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -291,12 +284,20 @@ footer > div > ul > li > a {
   }
 
   .headingElementContainer2 {
+    flex: 0 1 200px;
+    background: url(./assets/1.jfif) bottom no-repeat;
+    position: relative;
+    background-position: center;
     background-image: url(./assets/2.jpg);
     background-color: black;
     background-color: rgba(0, 0, 0, 1);
   }
 
   .headingElementContainer3 {
+    flex: 0 1 200px;
+    background: url(./assets/1.jfif) bottom no-repeat;
+    position: relative;
+    background-position: center;
     background-image: url(./assets/3.jpg);
     background-color: rgba(0, 0, 0, 1);
   }
@@ -820,10 +821,9 @@ header {
 }
 .headingLgContainer {
   flex-direction: column;
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  flex-basis: 60%;
+  flex-basis: 55%;
   object-position: center;
 }
 .headingHover1 {
@@ -841,4 +841,8 @@ header {
   flex-basis: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+}
+>>>>>>> Stashed changes
 }
