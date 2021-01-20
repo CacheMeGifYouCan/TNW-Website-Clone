@@ -852,5 +852,27 @@ header {
   flex-basis: 100%;
 }
 
+.advSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4rem 10rem 4rem 0rem;
+}
+
+.advSection > a {
+  position: relative;
+  width: 100%;
+}
+
+.gridBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gridBodyTitle {
+  align-items:flex-end;
+  margin-top: 2rem;
+}
+
 }
 }
