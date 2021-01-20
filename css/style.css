@@ -654,19 +654,19 @@ footer > div > ul > li > a {
   line-height: 18px;
 }
 
-  .deal {
-    color: #aaa;
-    font-size: 14px;
-    line-height: 13px;
-    padding-top: 4px;
-    vertical-align: baseline;
-  }
-  .old {
-    text-decoration: line-through;
-  }
-  .new {
-    color: #555;
-  }
+.deal {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 13px;
+  padding-top: 4px;
+  vertical-align: baseline;
+}
+.old {
+  text-decoration: line-through;
+}
+.new {
+  color: #555;
+}
 
  
 @media (min-width: 1024px) {
@@ -738,5 +738,36 @@ footer > div > ul > li > a {
   color: lightgray;
   padding-left: 25px;
 }
+}
 
+@media (min-width: 1200px) {
+  .gridHeading {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .headingHover1 {
+    flex-basis: 30%;
+  }
+  .headingHover2 {
+    flex-basis: 30%;
+  }
+  .headingHover3 {
+    flex-basis: 30%;
+  }
+  .headingElementContainer1 {
+    flex-basis: 30%;
+  }
+  .headingElementContainer2 {
+    flex-basis: 30%;
+  }
+  .headingElementContainer3 {
+    flex-basis: 33%;
+  }
+  #navContainer {
+    display: none;
+  }
+  #navContainer-second {
+    display: none;
+  }
+}
 }
