@@ -674,7 +674,7 @@ footer > div > ul > li > a {
   main {
     margin-top: 15px;
   }
-  
+
   #navContainer {
     display: none;
   }
@@ -712,6 +712,8 @@ footer > div > ul > li > a {
     justify-content: space-between;
     height: 45px;
     color: darkgray;
+    position: sticky;
+    top: 0;
     font-size: 14px;
     line-height: 1px;
   }
