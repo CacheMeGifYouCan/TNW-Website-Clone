@@ -420,6 +420,7 @@ footer > div > ul > li > a {
     width: 60px;
     position: absolute;
     padding-left: 10px;
+    z-index: 8;
   }
 
   .investCardName {
@@ -671,6 +672,10 @@ header {
   display: none;
 }
 
+#fundingHeading {
+  padding: 0px 20px 0 20px;
+  margin-bottom: 40px;
+ }
  
 @media (min-width: 767px) {
 
@@ -716,7 +721,7 @@ header {
 
   #navContainer-second > ul > li > a {
     color: #FFFFFF99;
-    padding-left: 8px;
+    padding-left: 7px;
 
   }
   ol, ul {
@@ -732,10 +737,17 @@ header {
     height: 45px;
     color: darkgray;
     position: sticky;
+    align-items: center;
     top: 0;
+    z-index: 50;
     font-size: 14px;
     line-height: 1px;
   }
+
+  #navContainer-second > ul :hover {
+    color: white;
+  }
+
   #navContainer-third > ul {
     display: flex;
     margin-right: 15px;
@@ -757,6 +769,35 @@ header {
   color: #aaaaaa;
   padding-left: 25px;
 }
+
+ #fundingLinks {
+ display: flex;
+}
+
+ #fundingLinks > li {
+  margin-right: 15px;
+  padding-right: 10px;
+  border-right: 1px solid orangered;
+  line-height: 1.0;
+}
+
+#fundingHeading li:last-of-type {
+  border-right: none;
+}
+
+#fundingSection {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+}
+
+.investCardName {
+  width: 65%;
+}
+
+.investCardCaption {
+  width: 65%;
+}
+
 .gridHeading {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -783,11 +824,5 @@ header {
 .headingElementContainer1 {
   flex-basis: 100%;
 }
-#navContainer {
-  display: none;
-}
-#navContainer-second {
-  display: none;
-}
-}
+
 }
