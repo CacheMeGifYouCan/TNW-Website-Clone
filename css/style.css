@@ -42,6 +42,72 @@ body {
   overflow-x: hidden;
 }
 
+footer > div > ul {
+  text-align: center;
+}
+
+footer > div > ul > li {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: lightgray;
+}
+
+footer > div > ul > li > a {
+  color: lightgray;
+}
+
+.lower-footer > span > a > img {
+  display: inline-block;
+    height: 20px;
+    margin-right: -4px;
+    vertical-align: bottom;
+    width: 55px;
+}
+.upper-footer {
+  background-color: #111;
+  width: 100%;
+  height: 135px;
+  padding-top: 35px;
+}
+.upper-footer > ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  font-size: 13px;
+}
+
+.social {
+  float: left;
+  }
+
+.social a {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: center;
+    line-height: 40px;
+    padding: 8px 8px 8px 8px;
+  }
+.lower-footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 20px;
+    font-size: 13px;
+  }
+.lower-footer > span {
+    display: inline-block;
+  }
+
 @media only screen and (max-width: 767px) {
   #navContainer-second {
     display: none;
@@ -572,67 +638,6 @@ body {
   line-height: 18px;
 }
 
-footer > div > ul {
-  text-align: center;
-}
-footer > div > ul > li {
-  padding-left: 5px;
-  padding-right: 5px;
-  color: lightgray;
-}
-footer > div > ul > li > a {
-  color: lightgray;
-}
-.lower-footer > span > a > img {
-  display: inline-block;
-    height: 20px;
-    margin-right: -4px;
-    vertical-align: bottom;
-    width: 55px;
-}
-.upper-footer {
-  background-color: #111;
-  width: 100%;
-  height: 135px;
-  padding-top: 35px;
-}
-.upper-footer > ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 30%;
-  font-size: 13px;
-}
-  .social {
-  float: left;
-  }
-  .social a {
-    width: 60px;
-    height: 60px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 0px;
-    text-align: center;
-    line-height: 40px;
-    padding: 8px 8px 8px 8px;
-  }
-  .lower-footer {
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    color: lightgray;
-    text-align: center;
-    padding: 30px 0;
-    line-height: 20px;
-    font-size: 13px;
-  }
-  .lower-footer > span {
-    display: inline-block;
-  }
-
   .deal {
     color: #aaa;
     font-size: 14px;
@@ -676,5 +681,99 @@ footer > div > ul > li > a {
     list-style: none;
 }
 
+  #navContainer-third {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+  #navContainer-third > ul {
+    display: flex;
+    margin-right: 7px;
+    margin-left: -40px;
+  }
+
+  #navContainer-third > ul > li > a > i {
+  font-size: 17px;
+  color: #666;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer > div > ul {
+  text-align: center;
+}
+
+footer > div > ul > li {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: lightgray;
+}
+
+footer > div > ul > li > a {
+  color: lightgray;
+}
+
+.lower-footer > span > a > img {
+  display: inline-block;
+    height: 20px;
+    margin-right: -4px;
+    vertical-align: bottom;
+    width: 55px;
+}
+.upper-footer {
+  background-color: #111;
+  width: 100%;
+  height: 135px;
+  padding-top: 35px;
+}
+.upper-footer > ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  font-size: 13px;
+}
+
+.social {
+  float: left;
+  }
+
+.social a {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: center;
+    line-height: 40px;
+    padding: 8px 8px 8px 8px;
+  }
+.lower-footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 20px;
+    font-size: 13px;
+  }
+.lower-footer > span {
+    display: inline-block;
+  }
 
 }
