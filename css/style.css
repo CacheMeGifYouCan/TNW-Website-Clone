@@ -1,3 +1,24 @@
+@font-face {
+  src: url(./assets/avalon/Avalon_Bold.ttf);
+  font-family: Avalon;
+}
+@font-face {
+  src: url(./assets/Shentox/Shentox\ W04\ Regular/Shentox);
+  font-family: Shentox;
+}
+@font-face {
+  src: url(./assets/font/ARSMaquettePro-Black.ttf);
+  font-family: ARS_Maquette_Reg;
+}
+@font-face {
+  src: url(./assets/font/ARSMaquettePro-Bold.ttf);
+  font-family: ARS_Maquette_Bold;
+}
+
+h2 {
+  font-family: Avalon, sans-serif;
+}
+
 @media only screen and (max-width: 767px) {
   html {
     overflow-x: hidden;
