@@ -766,6 +766,8 @@ header {
   }
  .newsBoxText1 {
    flex-basis: 35%;
+   min-width: 3.7rem;
+  min-height: 3.7rem;
  }
 
  .newsBoxText1 > a > strong {
@@ -836,82 +838,103 @@ header {
  .latestDealsImg8 {
   max-height: 10vmin;
   max-width: 10vmin;
+  height: 10vmin;
+  width: 10vmin;
+  min-width: 5rem;
+  min-height: 5rem;
   flex-grow: 0;
   flex-basis: 20%;
   background-position: 15% 5%;
   background-size: cover;
   margin-right: 10px;
+  background-position: center;
  }
 
  .newsBoxImg1 {
    background: url(./assets/4.jpg) no-repeat;
    background-size: cover;
+   background-position: center;
    
  }
  .newsBoxImg2 {
    background: url(./assets/5.png);
    background-size: cover;
+   background-position: center;
  }
  .newsBoxImg3 {
    background: url(./assets/6.jpg);
    background-size: cover;
+   background-position: center;
  }
  .newsBoxImg4 {
    background: url(./assets/7.jpg) no-repeat;
    background-size: cover;
+   background-position: center;
    
  }
  .newsBoxImg5 {
    background: url(./assets/8.png);
    background-size: cover;
+   background-position: center;
  }
  .newsBoxImg6 {
    background: url(./assets/9.jpeg);
    background-size: cover;
+   background-position: center;
  }
  .newsBoxImg7 {
    background: url(./assets/10.jpg) no-repeat;
    background-size: cover;
+   background-position: center;
    
  }
  .newsBoxImg8 {
    background: url(./assets/11.png);
    background-size: cover;
+   background-position: center;
  }
  .latestDealsImg1 {
   background: url(./assets/26.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   
 }
 .latestDealsImg2 {
   background: url(./assets/27.jpg);
   background-size: cover;
+  background-position: center;
 }
 .latestDealsImg3 {
   background: url(./assets/28.jpg);
   background-size: cover;
+  background-position: center;
 }
 .latestDealsImg4 {
   background: url(./assets/29.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   
 }
 .latestDealsImg5 {
   background: url(./assets/30.jpg);
   background-size: cover;
+  background-position: center;
 }
 .latestDealsImg6 {
   background: url(./assets/31.jpg);
   background-size: cover;
+  background-position: center;
 }
 .latestDealsImg7 {
   background: url(./assets/32.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   
 }
 .latestDealsImg8 {
   background: url(./assets/33.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .trump-holder {
@@ -1076,16 +1099,16 @@ header {
  
  .newsBox1 {
    flex-basis: 30%;
-   max-width: 15.5rem;
-   min-width: 18rem;
+   max-width: 14rem;
+   min-width: 15rem;
    min-height: 14rem;
    height: 14rem;
    flex-wrap: nowrap;
    flex-direction: column;
+   margin: 0.5%;
  }
 
  .newsBoxText1 {
-  flex-basis: 100%;
   align-items: center;
   flex-basis: 20%;
 }
@@ -1115,8 +1138,8 @@ header {
  .latestDealsImg7,
  .latestDealsImg8 {
    min-height: 7rem;
-   min-width: 17.7rem;
-   max-width: 18rem;
+   min-width: 15rem;
+   /* max-width: 15rem; */
  }
 
  .latest-news {
@@ -1127,12 +1150,14 @@ header {
 .advSection {
   display: flex;
   justify-content: space-evenly;
-  margin: 4rem 45% 4rem 45%;
+  
 }
 
 .advSection > a {
   position: relative;
-  width: 100%;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gridBody {
@@ -1184,4 +1209,5 @@ header {
   .trump {
     grid-template-columns: repeat(3, 1fr);
   }
+}
 }
