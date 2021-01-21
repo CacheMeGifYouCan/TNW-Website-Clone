@@ -638,7 +638,7 @@ footer > div > ul > li > a {
 .newsDescription > div > a {
   color: inherit;
   display: block;
-  margin-bottom: -16px;
+  margin-top: -14px;
   font-size: 0.85rem;
 }
 
