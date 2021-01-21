@@ -630,7 +630,9 @@ footer > div > ul > li > a {
   padding-top: 10px;
   color: orangered;
   flex: 1;
+  padding-left: 10px;
 }
+
 .newsDescription > div > div {
   font-family: "Shentox", sans-serif;
   font-size: 0.9rem;
