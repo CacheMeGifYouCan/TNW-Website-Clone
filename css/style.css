@@ -285,20 +285,18 @@ footer > div > ul > li > a {
 
   .headingElementContainer2 {
     flex: 0 1 200px;
-    background: url(./assets/1.jfif) bottom no-repeat;
+    background: url(./assets/2.jpg) bottom no-repeat;
     position: relative;
     background-position: center;
-    background-image: url(./assets/2.jpg);
     background-color: black;
     background-color: rgba(0, 0, 0, 1);
   }
 
   .headingElementContainer3 {
     flex: 0 1 200px;
-    background: url(./assets/1.jfif) bottom no-repeat;
+    background: url(./assets/3.jpg) bottom no-repeat;
     position: relative;
     background-position: center;
-    background-image: url(./assets/3.jpg);
     background-color: rgba(0, 0, 0, 1);
   }
 
@@ -340,6 +338,7 @@ footer > div > ul > li > a {
 
   .advSection {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 2rem;
     flex-direction: row;
     min-height: 20px;
@@ -352,7 +351,6 @@ footer > div > ul > li > a {
     background-size: cover;
     justify-self: center;
     height: 50px;
-    left: 40%;
   }
 
   /* Latest News Section */
@@ -517,10 +515,10 @@ footer > div > ul > li > a {
 }
 
 #newsContainer1 {
-  background: url(./assets/15.jfif) no-repeat;
+  background: url(./assets/15.jfif) bottom no-repeat;
 }
 #newsContainer2 {
-  background: url(./assets/donald.webp) no-repeat;
+  background: url(./assets/donald.webp) bottom no-repeat;
 }
 #newsContainer3 {
   background: url(./assets/Eye_strain.jpg) no-repeat;
@@ -555,7 +553,7 @@ footer > div > ul > li > a {
 #newsContainer9 {
   flex: 1 1 200px;
   min-height: 17em;
-  min-width: 23em;
+  min-width: 19em;
   background-color: #FF4422;
   position: relative;
   background-position: center;
@@ -565,9 +563,11 @@ footer > div > ul > li > a {
 
 .newsImageHeading {
   justify-items: flex-end;
+  overflow: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
+  max-width: 80%;
   margin: 0 0 10px 10px;
   color: white;
   font-size: 14px;
@@ -580,6 +580,7 @@ footer > div > ul > li > a {
   font-size: 20px;
   line-height: 22px;
   color: white;
+  word-wrap: break-word;
 }
 
 .headingCaption2 {
@@ -597,17 +598,22 @@ footer > div > ul > li > a {
   position: relative;
   padding: 10px 10px 10px 0;
   background: rgba(255,68,34,.08);
+  overflow: hidden;
+  object-fit: contain;
 }
 .newsDescription > a > p {
   margin: 0 0 0 10px;
   padding: 10px 10px 0 0;
-  width: 70%;
   font-size: 13.5px;
   line-height: 17px;
   font-family: ARS Maquette, sans-serif;
   display: inline-flex;
   text-decoration: none;
   color: orangered;
+}
+
+.newsDescription > a > p > strong {
+  max-width: 65%;
 }
 
 .newsDescription > a > p > strong:hover {
@@ -622,12 +628,12 @@ footer > div > ul > li > a {
   position: absolute;
   top: 0;
   right: 0;
-  float: right;
   width: 110px;
-  height: 100px;
+  height: 110px;
   padding: 0;
   margin: 0;
 }
+
 
 .newsList {
   position: relative;
@@ -786,19 +792,17 @@ header {
  .investCardCaption {
    width: 65%;
  }
- .gridBody {
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(3, 1fr);
-     grid-gap: 20px;
- }
- .gridBodyContainers {
-   display: flex;
-   flex-wrap: wrap;
- }
  .trump {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   padding: 16px;
+   
+ }
+ .newsImageHeading {
+   max-width: 100%;
+ }
+ .newsDescription > a > img {
+   height: 125px;
+   width: 125px;
  }
  .gridHeading {
    flex-direction: row;
@@ -826,10 +830,7 @@ header {
  .headingElementContainer1 {
    flex-basis: 100%;
  }
-.gridHeading {
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+
 .headingLgContainer {
   flex-direction: column;
   display: flex;
@@ -855,7 +856,7 @@ header {
 .advSection {
   display: flex;
   justify-content: space-evenly;
-  margin: 4rem 10rem 4rem 0rem;
+  margin: 4rem 45% 4rem 45%;
 }
 
 .advSection > a {
@@ -865,13 +866,18 @@ header {
 
 .gridBody {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border: 2px solid red;
   justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-.gridBodyTitle {
-  align-items:flex-end;
-  margin-top: 2rem;
+.gridBodyContainers {
+  border: 2px solid red;
+  flex-basis: 25%;
 }
 
 #fundingSectionItems {
@@ -887,5 +893,4 @@ header {
 
 .lower-footer > span {
   padding-left: 5px;
-}
 }
