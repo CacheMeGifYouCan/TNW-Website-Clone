@@ -142,9 +142,10 @@ footer > div > ul > li > a {
   }
 
   #menuBtn {
-    margin: 0 0 0 10px;
+    margin: 1px 0px 0 10px;
     border-left: 1px solid lightgray;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-top: 3px;
   }
 
   #searchBtn {
@@ -155,7 +156,7 @@ footer > div > ul > li > a {
     -ms-transform: scale(-1, 1);
     border-left: 1px solid lightgray;
     padding-left: 13px;
-    padding-top: 7px;
+    padding-top: 5px;
     padding-right: 5px;
   }
 
@@ -414,26 +415,23 @@ footer > div > ul > li > a {
     line-height: 25px;
   }
 
-  .investImage {
-    height: 60px;
+  .investImg {
     width: 60px;
     position: absolute;
-    padding-left: 10px;
+    top: 10px;
+    left: 10px;
+    z-index: 8;
   }
 
   .investCardName {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: -12px;
-    font-size: 1.4rem;
-    background-color: #f42;
+    background-color: orangered;
     color: #fff;
-    height: 30px;
-    width: 85%;
-    padding: 10px 0 5px 90px;
-    
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 0 10px 90px;
+    position: relative;
   }
-
+  
   .investCardCaption {
     display: inline-block;
     vertical-align: bottom;
@@ -453,41 +451,65 @@ footer > div > ul > li > a {
     line-height: 1.25;
   }
 
-  #fundingSection {
+  .fundingSection {
     display: grid;
     grid-gap: 20px;
     padding: 0px 20px 0 20px;
+    font-size: 13px;
   }
-  .investCardDetails > a > p > span > i {
+  .investCardDetails1 > i {
     font-size: 15px;
     color: black;
     margin-left: 10px;
     opacity: .9;
   }
 
-.investCardDetails p {
-  font-size: 13px;
-  color: #555;
-  
-}
-.investCardDetails2 {
-  font-size: 13px;
-  display: inline;
-}
+  .investCardDetails2 > i {
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    opacity: .9;
+  }
 
-.investCardDetails2 > a > p {
-  border-top: 1px solid rgba(255,68,34,.25);
-  padding-top: 15px;
-  color: #555;
-}
-.investCardDetails2 > a > p > span {
-  color: #aaa;
-  padding-left: 3px;
-}
 .investCardCaption > p {
   color: #000;
   opacity: .5;
   font-size: 11px;
+}
+
+.investCardCaption1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: 90px;
+  padding-top: 5px;
+}
+
+.investCardCaption2 {
+  color: gray;
+  font-size: 0.8rem;
+  padding-left: 90px;
+  font-family: "Shentox", sans-serif;
+  padding-bottom: 5px;
+}
+
+.investCardDetails1 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.investCardDetails2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid pink;
+}
+
+.investCardDetails3 {
+  padding: 10px 10px 15px;
+}
+
+.investCardDetails3 > span {
+  color: #AAAAAA;
+  padding-left: 3px;
 }
 
 /* NewsSection */
@@ -683,7 +705,20 @@ header {
   margin-bottom: 40px;
  }
 
- 
+ .fundingSectionItems {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.investCardDetails1 > span {
+  padding-left: 5px;
+}
+
+.investCardDetails2 > span {
+  padding-left: 5px;
+}
+
 @media (min-width: 767px) {
 
   main {
@@ -782,16 +817,11 @@ header {
  #fundingHeading li:last-of-type {
    border-right: none;
  }
- #fundingSection {
+ .fundingSection {
    grid-template-columns: repeat(3, 1fr);
    margin-bottom: 50px;
  }
- .investCardName {
-   width: 65%;
- }
- .investCardCaption {
-   width: 65%;
- }
+
  .trump {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -880,8 +910,8 @@ header {
   flex-basis: 25%;
 }
 
-#fundingSectionItems {
-  position: relative;
+.fundingSectionItems:last-of-type {
+  display: none;
 }
 
 .lower-footer {
@@ -893,4 +923,6 @@ header {
 
 .lower-footer > span {
   padding-left: 5px;
+}
+
 }
