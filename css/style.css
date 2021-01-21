@@ -574,14 +574,14 @@ footer > div > ul > li > a {
 #newsContainer7,
 #newsContainer8,
 #newsContainer9 {
-  flex: 1 1 200px;
-  min-height: 17em;
-  min-width: 19em;
-  background-color: #FF4422;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  justify-self: center;
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .newsImageHeading {
@@ -825,6 +825,14 @@ header {
    background-size: cover;
  }
 
+ .trump-holder {
+  display: block;
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+ }
+
 
 @media screen and (min-width: 767px) {
 
@@ -937,8 +945,9 @@ header {
  .trump {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   
+   padding: 5px;
  }
+
  .newsImageHeading {
    max-width: 100%;
  }
