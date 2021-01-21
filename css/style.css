@@ -63,7 +63,7 @@ footer > div > ul > li > a {
 .lower-footer > span > a > img {
   display: inline-block;
     height: 20px;
-    margin-right: -2px;
+    margin-right: -4px;
     vertical-align: bottom;
     width: 55px;
 }
@@ -131,7 +131,6 @@ footer > div > ul > li > a {
     justify-content: space-between;
     z-index: 10;
     padding: 8px;
-    height: 32px;
   }
 
   .bar {
@@ -623,38 +622,12 @@ footer > div > ul > li > a {
 }
 
 .newsDescription {
-  height: 100px;
-  display: flex;
-  padding-top: 1px;
+  position: relative;
+  padding: 10px 10px 10px 0;
+  background: rgba(255,68,34,.08);
+  overflow: hidden;
+  object-fit: contain;
 }
-
-.newsDescription > div {
-  padding: 10px;
-  color: orangered;
-  flex: 1;
-}
-
-.newsDescription > div > div {
-    font-family: "Shentox", sans-serif;
-    font-size: 0.9rem;
-    color: orangered;
-}
-
-.newsDescription > div > a {
-  color: inherit;
-  display: block;
-  margin-bottom: -16px;
-  font-size: 0.85rem;
-}
-
-.newsDescription > a {
-  display: block;
-}
-
-.newsDescription > a > img {
-  height: 100px;
-}
-
 .newsDescription > a > p {
   margin: 0 0 0 10px;
   padding: 10px 10px 0 0;
@@ -678,6 +651,16 @@ footer > div > ul > li > a {
 .newsList > li > a:hover {
   color: black;
 }
+.newsDescription > a > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  padding: 0;
+  margin: 0;
+}
+
 
 .newsList {
   position: relative;
@@ -914,11 +897,6 @@ header {
   background-size: cover;
 }
 
-<<<<<<< Updated upstream
-
-@media screen and (min-width: 767px) {
-=======
->>>>>>> Stashed changes
 
 
 @media (min-width: 767px) {
@@ -1030,7 +1008,10 @@ header {
  .newsImageHeading {
    max-width: 100%;
  }
-
+ .newsDescription > a > img {
+   height: 125px;
+   width: 125px;
+ }
  .gridHeading {
    flex-direction: row;
    flex-wrap: nowrap;
@@ -1151,12 +1132,8 @@ header {
 .fundingSectionItems:last-of-type {
   display: none;
 }
-<<<<<<< Updated upstream
-  #fundingSectionItems {
-=======
 
 #fundingSectionItems {
->>>>>>> Stashed changes
   position: relative;
 }
 
@@ -1169,28 +1146,4 @@ header {
 
 .lower-footer > span {
   padding-left: 5px;
-<<<<<<< Updated upstream
-}
-
-}
-
-@media screen and (min-width: 1024px) {
-
-  header > a {
-    display:none;
-  }
-
-  .fundingSectionItems:last-of-type {
-    display: block;
-  }
-
-  .fundingSection {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .trump {
-    grid-template-columns: repeat(3, 1fr);
-  }
-=======
->>>>>>> Stashed changes
 }
