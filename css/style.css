@@ -14,6 +14,10 @@
   src: url(./assets/font/ARSMaquettePro-Bold.ttf);
   font-family: ARS_Maquette_Bold;
 }
+@font-face {
+  src: url(./assets/font/ARSMaquettePro-Bold.eot);
+  font-family: ARS_Maquette_Bold2;
+}
 
 h2, h4 {
   font-family: Avalon, sans-serif;
@@ -341,7 +345,8 @@ footer > div > ul > li > a {
   .advSection {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     flex-direction: row;
     min-height: 20px;
     align-self: center;
@@ -358,11 +363,11 @@ footer > div > ul > li > a {
   /* Latest News Section */
 
   .latest-news > a {
-    padding: 0 20px 0 20px;
     font-family: Avalon, Helvetica, sans-serif;
     font-size: 26px;
     line-height: 30px;
     color: orangered;
+    margin-left: 1%;
     font-weight: 900;
   }
 
@@ -743,9 +748,13 @@ header {
   overflow: hidden;
   align-self: center;
   vertical-align: middle;
-  
  }
 
+ .latestNewsContainer1 {
+   margin-left: 4%;
+   margin-right: 4%;
+   margin-top: 4%;
+ }
  .newsTextContainer {
    display: flex;
    flex-direction: column;
@@ -754,23 +763,59 @@ header {
   .newsBox1 {
    position: relative;
    display: flex;
+   margin-bottom: 10px;
   }
  .newsBoxText1 {
-   flex-basis: 80%;
+   flex-basis: 35%;
  }
 
+ .newsBoxText1 > a > strong {
+  text-decoration: none;
+  color: #000;
+  font-family: ARS_Maquette_Bold2, sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+ }
+
+ .newsBoxText1 > a > strong:hover {
+   text-decoration: underline;
+   color: orangered;
+ }
  .newsCaptions {
    display: flex;
    flex-direction: row;
-   flex-basis: 20%;
+   flex-basis: 30%;
+   flex-grow: 0;
+   flex-wrap: nowrap;
+   font-family: ARS_Maquette_Reg, sans-serif;
+   line-height: 10px;
+   font-size: 13px;
+   color: #aaa;
+   text-align: start;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 24rem;
  }
 
  .newsBoxCaption1st {
    flex-basis: 30%;
+   flex-grow: 0;
  }
  .newsBoxCaption2nd {
    flex-basis: 30%;
+   flex-grow: 0;
  }
+
+ .newsBoxCaption1st > a:hover {
+  text-decoration: underline;
+  color: #000;
+ }
+
+ .newsBoxCaption1st > a{
+  text-decoration: none;
+  color: #aaa;
+ }
+
 
  /* News Box Images */
 
@@ -781,12 +826,21 @@ header {
  .newsBoxImg5,
  .newsBoxImg6,
  .newsBoxImg7,
- .newsBoxImg8 {
-  height: 25vmin;
-  width: 100%;
-  flex-basis: 30%;
-  background-position: 10% 5%;
+ .newsBoxImg8,
+ .latestDealsImg1,
+ .latestDealsImg2,
+ .latestDealsImg3,
+ .latestDealsImg4,
+ .latestDealsImg5,
+ .latestDealsImg6,
+ .latestDealsImg7,
+ .latestDealsImg8 {
+  height: 10vmin;
+  width: 15vmin;
+  flex-basis: 20%;
+  background-position: 15% 5%;
   background-size: cover;
+  margin-right: 10px;
  }
 
  .newsBoxImg1 {
@@ -824,15 +878,50 @@ header {
    background: url(./assets/11.png);
    background-size: cover;
  }
+ .latestDealsImg1 {
+  background: url(./assets/26.jpg) no-repeat;
+  background-size: cover;
+  
+}
+.latestDealsImg2 {
+  background: url(./assets/27.jpg);
+  background-size: cover;
+}
+.latestDealsImg3 {
+  background: url(./assets/28.jpg);
+  background-size: cover;
+}
+.latestDealsImg4 {
+  background: url(./assets/29.jpg) no-repeat;
+  background-size: cover;
+  
+}
+.latestDealsImg5 {
+  background: url(./assets/30.jpg);
+  background-size: cover;
+}
+.latestDealsImg6 {
+  background: url(./assets/31.jpg);
+  background-size: cover;
+}
+.latestDealsImg7 {
+  background: url(./assets/32.jpg) no-repeat;
+  background-size: cover;
+  
+}
+.latestDealsImg8 {
+  background: url(./assets/33.jpg);
+  background-size: cover;
+}
 
+<<<<<<< Updated upstream
 
 @media screen and (min-width: 767px) {
+=======
+>>>>>>> Stashed changes
 
-  .latestNewsContainer1 {
-    flex-direction: row;
-    display: flex;
-   }
 
+@media (min-width: 767px) {
   main {
     margin-top: 15px;
   }
@@ -937,7 +1026,6 @@ header {
  .trump {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   
  }
  .newsImageHeading {
    max-width: 100%;
@@ -970,27 +1058,68 @@ header {
    flex-basis: 100%;
  }
 
-.headingLgContainer {
-  flex-direction: column;
+ .latestNewsContainer1 {
   display: flex;
-  flex-wrap: nowrap;
-  flex-basis: 55%;
-  object-position: center;
-}
-.headingHover1 {
-  flex-basis: 85%;
-  flex-direction: row;
-  display: flex;
-}
-.headingHover2 {
-  flex-basis: 20%;
-}
-.headingHover3 {
-  flex-basis: 20%;
-}
-.headingElementContainer1 {
+  flex-flow: row wrap;
+  align-content: stretch;
+  /* margin-left: 15%; */
+  /* max-width: 70%; */
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 4%;
+  
+ }
+
+ 
+ .newsBox1 {
+   flex-basis: 30%;
+   max-width: 15.5rem;
+   min-width: 18rem;
+   min-height: 14rem;
+   height: 14rem;
+   flex-wrap: nowrap;
+   flex-direction: column;
+ }
+
+ .newsBoxText1 {
   flex-basis: 100%;
+  align-items: center;
+  flex-basis: 20%;
 }
+
+.newsBoxText1 > a > strong {
+  margin-bottom: 0;
+}
+
+.newsCaptions {
+  flex-basis: 80%;
+}
+
+ .newsBoxImg1,
+ .newsBoxImg2,
+ .newsBoxImg3,
+ .newsBoxImg4,
+ .newsBoxImg5,
+ .newsBoxImg6,
+ .newsBoxImg7,
+ .newsBoxImg8,
+ .latestDealsImg1,
+ .latestDealsImg2,
+ .latestDealsImg3,
+ .latestDealsImg4,
+ .latestDealsImg5,
+ .latestDealsImg6,
+ .latestDealsImg7,
+ .latestDealsImg8 {
+   min-height: 7rem;
+   min-width: 17.7rem;
+   max-width: 18rem;
+ }
+
+ .latest-news {
+   margin-left: 1%;
+ }
+
 
 .advSection {
   display: flex;
@@ -1022,7 +1151,12 @@ header {
 .fundingSectionItems:last-of-type {
   display: none;
 }
+<<<<<<< Updated upstream
   #fundingSectionItems {
+=======
+
+#fundingSectionItems {
+>>>>>>> Stashed changes
   position: relative;
 }
 
@@ -1035,6 +1169,7 @@ header {
 
 .lower-footer > span {
   padding-left: 5px;
+<<<<<<< Updated upstream
 }
 
 }
@@ -1056,4 +1191,6 @@ header {
   .trump {
     grid-template-columns: repeat(3, 1fr);
   }
+=======
+>>>>>>> Stashed changes
 }
