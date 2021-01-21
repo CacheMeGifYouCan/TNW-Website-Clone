@@ -750,11 +750,21 @@ header {
 
 .investCardDetails1 > span {
   padding-left: 5px;
+  color: #555;
 }
 
 .investCardDetails2 > span {
   padding-left: 5px;
+  color: #555;
 }
+.investCardDetails1 > span:hover {
+  color: black;
+}
+
+.investCardDetails2 > span:hover {
+  color: black;
+}
+
  .latestNewsContainer1::before {
   flex-direction: column;
   display: flex;
