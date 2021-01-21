@@ -618,12 +618,38 @@ footer > div > ul > li > a {
 }
 
 .newsDescription {
-  position: relative;
-  padding: 10px 10px 10px 0;
-  background: rgba(255,68,34,.08);
-  overflow: hidden;
-  object-fit: contain;
+  height: 100px;
+  display: flex;
+  padding-top: 1px;
 }
+
+.newsDescription > div {
+  padding: 10px;
+  color: orangered;
+  flex: 1;
+}
+
+.newsDescription > div > div {
+    font-family: "Shentox", sans-serif;
+    font-size: 0.9rem;
+    color: orangered;
+}
+
+.newsDescription > div > a {
+  color: inherit;
+  display: block;
+  margin-bottom: -16px;
+  font-size: 0.85rem;
+}
+
+.newsDescription > a {
+  display: block;
+}
+
+.newsDescription > a > img {
+  height: 100px;
+}
+
 .newsDescription > a > p {
   margin: 0 0 0 10px;
   padding: 10px 10px 0 0;
@@ -647,16 +673,6 @@ footer > div > ul > li > a {
 .newsList > li > a:hover {
   color: black;
 }
-.newsDescription > a > img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 110px;
-  height: 110px;
-  padding: 0;
-  margin: 0;
-}
-
 
 .newsList {
   position: relative;
@@ -926,10 +942,7 @@ header {
  .newsImageHeading {
    max-width: 100%;
  }
- .newsDescription > a > img {
-   height: 125px;
-   width: 125px;
- }
+
  .gridHeading {
    flex-direction: row;
    flex-wrap: nowrap;
@@ -1031,9 +1044,11 @@ header {
   header > a {
     display:none;
   }
+
   .fundingSectionItems:last-of-type {
     display: block;
   }
+
   .fundingSection {
     grid-template-columns: repeat(4, 1fr);
   }
