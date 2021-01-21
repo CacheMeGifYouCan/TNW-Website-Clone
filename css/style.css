@@ -340,7 +340,22 @@ footer > div > ul > li > a {
     color: #000;
   }
 
+  .latest-deal {
+    display: flex;
+    justify-content: space-between;
+    color: orangered;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .latest-deal > h2 {
+    font: bold 26px ;
+  }
 
+  .latest-deal>a{
+    font-size: 16px;
+    color: orangered;
+  }
 
   .advSection {
     display: flex;
@@ -631,6 +646,7 @@ footer > div > ul > li > a {
   color: orangered;
   flex: 1;
   padding-left: 10px;
+  overflow: hidden;
 }
 
 .newsDescription > div > div {
@@ -1015,6 +1031,11 @@ header {
     margin-right: 15px;
     margin-left: -45px;
     margin-top: 10px;
+  }
+
+  #navContainer-third > ul:last-of-type {
+    border-left: 1px solid #eee;
+    padding-left: 0;
   }
 
   #navContainer-third > ul :hover {
