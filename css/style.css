@@ -1148,12 +1148,14 @@ header {
 .advSection {
   display: flex;
   justify-content: space-evenly;
-  margin: 4rem 45% 4rem 45%;
+  
 }
 
 .advSection > a {
   position: relative;
-  width: 100%;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gridBody {
