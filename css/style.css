@@ -1091,19 +1091,27 @@ header {
  .gridHeading {
    flex-direction: row;
    flex-wrap: nowrap;
+   flex-grow: 1;
+   flex-shrink: 1;
+   width: auto;
+   
  }
  .headingLgContainer {
    flex-direction: column;
-   width: 100%;
+   max-width: 20rem;
    display: flex;
    flex-wrap: nowrap;
    flex-basis: 60%;
    object-position: center;
+   flex-grow: 1;
+   flex-shrink: 1;
  }
  .headingHover1 {
-   flex-basis: 85%;
+   flex-basis: 60%;
    flex-direction: row;
    display: flex;
+   min-height: 32rem;
+   min-width: 40rem;
  }
  .headingHover2 {
    flex-basis: 20%;
@@ -1114,6 +1122,26 @@ header {
  .headingElementContainer1 {
    flex-basis: 100%;
  }
+ .headingElementContainer1 > div > strong {
+   font-size: 2.5rem;
+   line-height: 2.5rem;
+ }
+
+ .headingTitle {
+   line-height: 1.5rem;
+ }
+ .headingElementContainer2 {
+   flex-basis: 100%;
+   height: 15.5rem;
+   min-width: 18rem;
+ }
+ .headingElementContainer3 {
+   flex-basis: 100%;
+   height: 15.5rem;
+   min-width: 18rem;
+ }
+
+
 
  .latestNewsContainer1 {
   display: flex;
@@ -1240,5 +1268,119 @@ header {
   .trump {
     grid-template-columns: repeat(3, 1fr);
   }
+  .gridHeading {
+    max-width: 200rem;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: stretch;
+    margin-left: 2%;
+  }
+
+  .headingLgContainer {
+    height: none;
+    width: none;
+    justify-content: stretch;
+  }
+  .headingElementContainer1 {
+    min-height: 42rem;
+    width: 100%;
+  }
+
+  .headingElementContainer2 {
+    min-height: 21.5rem;
+    width: 98%;
+  }
+  .headingElementContainer3 {
+    min-height: 21.5rem;
+    width: 98%;
+  }
+
+  .overlay {
+    width: 100%;
+  }
+
+
+ .headingLgContainer {
+  flex-direction: column;
+  max-width: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+  object-position: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.headingHover1 {
+  flex-basis: 60%;
+  flex-direction: row;
+  display: flex;
+  min-height: 32rem;
+  min-width: 40rem;
+}
+.headingHover2 {
+  flex-basis: 20%;
+}
+.headingHover3 {
+  flex-basis: 20%;
+}
+.latestNewsContainer1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+  /* margin-left: 15%; */
+  /* max-width: 70%; */
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  width: auto;
+  
+ }
+
+ 
+ .newsBox1 {
+   flex-basis: 30%;
+   max-width: 14rem;
+   min-width: 15rem;
+   min-height: 14rem;
+   height: 14rem;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   margin: 0.5%;
+ }
+
+ .newsBoxText1 {
+  align-items: center;
+  flex-basis: 20%;
+}
+
+.newsBoxText1 > a > strong {
+  margin-bottom: 0;
+}
+
+.newsCaptions {
+  flex-basis: 80%;
+}
+
+ .newsBoxImg1,
+ .newsBoxImg2,
+ .newsBoxImg3,
+ .newsBoxImg4,
+ .newsBoxImg5,
+ .newsBoxImg6,
+ .newsBoxImg7,
+ .newsBoxImg8,
+ .latestDealsImg1,
+ .latestDealsImg2,
+ .latestDealsImg3,
+ .latestDealsImg4,
+ .latestDealsImg5,
+ .latestDealsImg6,
+ .latestDealsImg7,
+ .latestDealsImg8 {
+   min-height: 15rem;
+   justify-content: stretch;
+   width: auto;
+ }
 }
 }
