@@ -705,6 +705,7 @@ header {
   margin-bottom: 40px;
  }
 
+<<<<<<< Updated upstream
  .fundingSectionItems {
   text-decoration: none;
   color: inherit;
@@ -718,8 +719,105 @@ header {
 .investCardDetails2 > span {
   padding-left: 5px;
 }
+=======
+ .latestNewsContainer1::before {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+  align-self: center;
+  vertical-align: middle;
+  
+ }
+
+ .newsTextContainer {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 70%;
+  }
+  .newsBox1 {
+   position: relative;
+   display: flex;
+  }
+ .newsBoxText1 {
+   flex-basis: 80%;
+ }
+
+ .newsCaptions {
+   display: flex;
+   flex-direction: row;
+   flex-basis: 20%;
+ }
+
+ .newsBoxCaption1st {
+   flex-basis: 30%;
+ }
+ .newsBoxCaption2nd {
+   flex-basis: 30%;
+ }
+
+ /* News Box Images */
+
+ .newsBoxImg1,
+ .newsBoxImg2,
+ .newsBoxImg3,
+ .newsBoxImg4,
+ .newsBoxImg5,
+ .newsBoxImg6,
+ .newsBoxImg7,
+ .newsBoxImg8 {
+  height: 25vmin;
+  width: 100%;
+  flex-basis: 30%;
+  background-position: 10% 5%;
+  background-size: cover;
+ }
+
+ .newsBoxImg1 {
+   background: url(./assets/4.jpg) no-repeat;
+   background-size: cover;
+   
+ }
+ .newsBoxImg2 {
+   background: url(./assets/5.png);
+   background-size: cover;
+ }
+ .newsBoxImg3 {
+   background: url(./assets/6.jpg);
+   background-size: cover;
+ }
+ .newsBoxImg4 {
+   background: url(./assets/7.jpg) no-repeat;
+   background-size: cover;
+   
+ }
+ .newsBoxImg5 {
+   background: url(./assets/8.png);
+   background-size: cover;
+ }
+ .newsBoxImg6 {
+   background: url(./assets/9.jpeg);
+   background-size: cover;
+ }
+ .newsBoxImg7 {
+   background: url(./assets/10.jpg) no-repeat;
+   background-size: cover;
+   
+ }
+ .newsBoxImg8 {
+   background: url(./assets/11.png);
+   background-size: cover;
+ }
+
+>>>>>>> Stashed changes
 
 @media (min-width: 767px) {
+
+  .latestNewsContainer1 {
+    flex-direction: row;
+    display: flex;
+   }
 
   main {
     margin-top: 15px;
@@ -894,6 +992,7 @@ header {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
 .gridBody {
   display: flex;
   flex-wrap: nowrap;
@@ -912,6 +1011,10 @@ header {
 
 .fundingSectionItems:last-of-type {
   display: none;
+=======
+#fundingSectionItems {
+  position: relative;
+>>>>>>> Stashed changes
 }
 
 .lower-footer {
