@@ -48,12 +48,79 @@ footer > div > ul > li > a {
   padding: 8px 8px 8px 8px;
 }
 
+.latest-deal > a {
+  font-size: 16px;
+  color: orangered;
+}
+
+.latest-news > a {
+  padding: 0 20px 0 20px;
+  font-family: Avalon, Helvetica, sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  color: orangered;
+  font-weight: 900;
+}
+
+.newsDescription > a {
+  display: block;
+}
+
+.newsBoxCaption1st > a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.gridBodyTitle > h3 > a {
+  text-decoration: none;
+  color: black;
+  line-height: 18px;
+}
+
+.newsTitle2 > i {
+  color: red;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.newsDescription > div > a {
+  color: inherit;
+  display: block;
+  margin-top: -14px;
+  font-size: 0.85rem;
+}
+
+.newsList > li > a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: ARS Maquette, sans-serif;
+  color: #667;
+}
+
 .latest-news > a:hover {
   color: #000;
 }
 
+.newsBoxCaption1st > a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.gridBodyTitle > h3 > a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.newsList > li > a:hover {
+  color: black;
+}
+
 #fundingLinks > li > a {
-  color: #FF4422;
+  color: #f42;
   margin-left: -5px;
 }
 
@@ -63,6 +130,14 @@ footer > div > ul > li > a {
   font-weight: 700;
   line-height: 1.1;
   font-size: 2rem;
+}
+
+.newsTitle2 {
+  margin: 15px 0 15px 0;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: Avalon, sans-serif;
 }
 
 #fundingHeader:hover,
@@ -88,6 +163,14 @@ body {
   font-family: ARS_Maquette_Reg, sans-serif;
 }
 
+ol,
+ul {
+  list-style: none;
+  text-align: left;
+  margin-left: -35px;
+  line-height: 25px;
+}
+
 footer > div > ul {
   text-align: center;
 }
@@ -102,6 +185,18 @@ footer > div > ul > li {
   width: 80px;
   height: 80px;
   margin-right: 10px;
+}
+
+.advSection > a > img {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  justify-self: center;
+  height: 50px;
+}
+
+.newsDescription > a > img {
+  height: 100px;
 }
 
 .lower-footer > span > a > img {
@@ -203,6 +298,20 @@ footer > div > ul > li {
   padding-left: 13px;
   padding-top: 5px;
   padding-right: 5px;
+}
+
+.investCardDetails1 > i {
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  opacity: 0.9;
+}
+
+.investCardDetails2 > i {
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  opacity: 0.9;
 }
 
 .searchBtn > a > i {
@@ -363,14 +472,9 @@ figcaption {
 }
 
 .latest-deal > h2 {
-  font-family: Avalon;
+  font-family: Avalon, sans-serif;
   font-weight: bold;
   font-size: 26px;
-}
-
-.latest-deal > a{
-  font-size: 16px;
-  color: orangered;
 }
 
 .advSection {
@@ -380,23 +484,6 @@ figcaption {
   flex-direction: row;
   min-height: 20px;
   align-self: center;
-}
-
-.advSection > a > img {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  justify-self: center;
-  height: 50px;
-}
-
-.latest-news > a {
-  padding: 0 20px 0 20px;
-  font-family: Avalon, Helvetica, sans-serif;
-  font-size: 26px;
-  line-height: 30px;
-  color: orangered;
-  font-weight: 900;
 }
 
 .gridBody {
@@ -431,25 +518,6 @@ figcaption {
   margin-top: 0;
 }
 
-.gridBodyTitle > h3 > a {
-  text-decoration: none;
-  color: black;
-  line-height: 18px;
-}
-
-.gridBodyTitle > h3 > a:hover {
-  color: #FF4422;
-  text-decoration: underline;
-}
-
-ol,
-ul {
-  list-style: none;
-  text-align: left;
-  margin-left: -35px;
-  line-height: 25px;
-}
-
 .investImg {
   width: 60px;
   position: absolute;
@@ -473,7 +541,7 @@ ul {
   margin-top: -30px;
   font-size: 1rem;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   height: 15%;
   width: 85%;
   padding: 10px 0 10px 90px;
@@ -489,27 +557,13 @@ h4 {
 .fundingSection {
   display: grid;
   grid-gap: 20px;
-  padding: 0px 20px 0 20px;
+  padding: 0 20px 0 20px;
   font-size: 13px;
-}
-
-.investCardDetails1 > i {
-  font-size: 15px;
-  color: black;
-  margin-left: 10px;
-  opacity: .9;
-}
-
-.investCardDetails2 > i {
-  font-size: 15px;
-  color: black;
-  margin-left: 10px;
-  opacity: .9;
 }
 
 .investCardCaption > p {
   color: #000;
-  opacity: .5;
+  opacity: 0.5;
   font-size: 11px;
 }
 
@@ -544,23 +598,8 @@ h4 {
 }
 
 .investCardDetails3 > span {
-  color: #AAAAAA;
+  color: #aaa;
   padding-left: 3px;
-}
-
-.newsTitle2 {
-  margin: 15px 0 15px 0px;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 30px;
-  font-family: Avalon, sans-serif;
-}
-
-.newsTitle2 > i {
-  color: red;
-  font-weight: bolder;
-  text-decoration: none;
-  font-size: 18px;
 }
 
 .newsSection {
@@ -679,21 +718,6 @@ h4 {
   color: orangered;
 }
 
-.newsDescription > div > a {
-  color: inherit;
-  display: block;
-  margin-top: -14px;
-  font-size: 0.85rem;
-}
-
-.newsDescription > a {
-  display: block;
-}
-
-.newsDescription > a > img {
-  height: 100px;
-}
-
 .newsDescription > a > p {
   margin: 0 0 0 10px;
   padding: 10px 10px 0 0;
@@ -705,8 +729,21 @@ h4 {
   color: orangered;
 }
 
+.newsBoxText1 > a > strong {
+  text-decoration: none;
+  color: #000;
+  font-family: ARS_Maquette_Bold2, sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+}
+
 .newsDescription > a > p > strong {
   max-width: 65%;
+}
+
+.newsBoxText1 > a > strong:hover {
+  text-decoration: underline;
+  color: orangered;
 }
 
 .newsDescription > a > p > strong:hover {
@@ -714,25 +751,11 @@ h4 {
   text-decoration-color: pink;
 }
 
-.newsList > li > a:hover {
-  color: black;
-}
-
 .newsList {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 0;
-}
-
-.newsList > li > a {
-  display: block;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-  line-height: 20px;
-  font-size: 13px;
-  font-family: ARS Maquette, sans-serif;
-  color: #667;
 }
 
 .newsList > li {
@@ -807,33 +830,10 @@ header {
   margin-bottom: 10px;
 }
 
-.newsBoxText1 > a > strong {
-  text-decoration: none;
-  color: #000;
-  font-family: ARS_Maquette_Bold2, sans-serif;
-  line-height: 18px;
-  font-size: 14px;
-}
-
-.newsBoxText1 > a > strong:hover {
-  text-decoration: underline;
-  color: orangered;
-}
-
-.newsBoxCaption1st > a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
-.newsBoxCaption1st > a{
-  text-decoration: none;
-  color: #aaa;
-}
-
 .newsBoxImg1 {
   background: url(./assets/4.jpg) no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .newsBoxImg2 {
@@ -847,10 +847,11 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 .newsBoxImg4 {
   background: url(./assets/7.jpg) no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .newsBoxImg5 {
@@ -868,7 +869,7 @@ header {
 .newsBoxImg7 {
   background: url(./assets/10.jpg) no-repeat;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 
 .newsBoxImg8 {
