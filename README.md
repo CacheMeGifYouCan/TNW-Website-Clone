@@ -11,8 +11,7 @@ Good day world
 
 Lets welcome one more code in the line of many more to come during our time here at Microverse.
 
-
-                                                                            -Matija Maksimovic
+  -Matija Maksimovic
 Our website was created with fluidity and user interaction in mind.
 
 
