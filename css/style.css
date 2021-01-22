@@ -23,13 +23,57 @@
   font-family: ARS_Maquette_Bold2;
 }
 
+a {
+  text-decoration: none;
+}
+
+figcaption > a {
+  color: #bbb;
+}
+
+footer > div > ul > li > a {
+  color: lightgray;
+}
+
+.social a {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 0;
+  text-align: center;
+  line-height: 40px;
+  padding: 8px 8px 8px 8px;
+}
+
+.latest-news > a:hover {
+  color: #000;
+}
+
+#fundingLinks > li > a {
+  color: #FF4422;
+  margin-left: -5px;
+}
+
+#fundingHeader,
+.newsTitle2 {
+  color: orangered;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 2rem;
+}
+
+#fundingHeader:hover,
+#fundingLinks > li > a:hover,
+.newsTitle2:hover {
+  color: #000;
+}
+
 h2,
 h4 {
   font-family: Avalon, sans-serif;
-}
-
-a {
-  text-decoration: none;
 }
 
 html {
@@ -54,8 +98,10 @@ footer > div > ul > li {
   color: lightgray;
 }
 
-footer > div > ul > li > a {
-  color: lightgray;
+.newsBox1 > a > img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .lower-footer > span > a > img {
@@ -94,19 +140,6 @@ footer > div > ul > li > a {
   flex-wrap: wrap;
   padding-inline-start: 35px;
 }
-
-.social a {
-  width: 60px;
-  height: 60px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 20px;
-  margin-right: 0px;
-  text-align: center;
-  line-height: 40px;
-  padding: 8px 8px 8px 8px;
-  }
 
 .lower-footer {
   width: 100%;
@@ -157,14 +190,14 @@ footer > div > ul > li > a {
 }
 
 .menuBtn {
-  margin: 1px 0px 0 10px;
+  margin: 1px 0 0 10px;
   border-left: 1px solid lightgray;
   padding-left: 20px;
   padding-top: 3px;
 }
 
 .searchBtn {
-  margin: 0px 0px 0 10px;
+  margin: 0 0 0 10px;
   color: #1c87c9;
   border-left: 1px solid lightgray;
   padding-left: 13px;
@@ -311,36 +344,13 @@ main {
 }
 
 figcaption {
-  color: #AAA;
+  color: #aaa;
   margin-left: 50px;
   margin-top: -15px;
   position: absolute;
   font-family: ARS_Maquette_Reg, sans-serif;
   font-size: 11.5px;
   line-height: 18px;
-}
-  figcaption > a {
-    color: #bbb;
-}
-
-#fundingHeader,
-.newsTitle2 {
-  color: orangered;
-  font-weight: 700;
-  line-height: 1.1;
-  font-size: 2rem;
-}
-
-#fundingLinks > li > a {
-  color: #FF4422;
-  margin-left: -5px;
-}
-
-.latest-news > a:hover,
-#fundingHeader:hover,
-#fundingLinks > li > a:hover,
-.newsTitle2:hover {
-  color: #000;
 }
 
 .latest-deal {
@@ -353,7 +363,9 @@ figcaption {
 }
 
 .latest-deal > h2 {
-  font: Avalon bold 26px ;
+  font-family: Avalon;
+  font-weight: bold;
+  font-size: 26px;
 }
 
 .latest-deal > a{
@@ -921,12 +933,6 @@ header {
   width: 100%;
 }
 
-.newsBox1 > a > img {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-}
-
 .latestDealContainer {
   margin-bottom: 10px;
 }
@@ -982,6 +988,13 @@ header {
     display: none;
   }
 
+  .advSection > a {
+    position: relative;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   #navContainer-second {
     display: flex;
     justify-content: space-between;
@@ -992,6 +1005,11 @@ header {
     font-size: 13px;
   }
 
+  ol,
+  ul {
+    list-style: none;
+  }
+
   #navContainer-second > ul {
     display: flex;
     margin-right: 15px;
@@ -1000,20 +1018,15 @@ header {
   }
 
   #navContainer-second > ul > li > a {
-    color: #FFFFFF99;
+    color: white;
     padding-left: 8px;
-  }
-
-  ol,
-  ul {
-    list-style: none;
   }
 
   #navContainer-third {
     grid-column: 2;
     grid-row: 2;
     display: flex;
-    font-family: Shentox;
+    font-family: Shentox, sans-serif;
     justify-content: space-between;
     height: 45px;
     color: darkgray;
@@ -1046,7 +1059,7 @@ header {
   }
 
   #navContainer-third > ul > li > a {
-    color: #aaaaaa;
+    color: #aaa;
     padding-left: 25px;
   }
 
@@ -1055,10 +1068,10 @@ header {
   }
 
   #fundingLinks > li {
-     margin-right: 15px;
-     padding-right: 10px;
-     border-right: 1px solid orangered;
-     line-height: 1.0;
+    margin-right: 15px;
+    padding-right: 10px;
+    border-right: 1px solid orangered;
+    line-height: 1;
   }
 
   #fundingHeading li:last-of-type {
@@ -1169,13 +1182,6 @@ header {
     justify-content: space-evenly;
   }
 
-  .advSection > a {
-    position: relative;
-    width: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   .gridBody {
     display: flex;
     flex-wrap: nowrap;
@@ -1226,7 +1232,7 @@ header {
     display: flex;
     justify-content: center;
     height: 35px;
-    padding: 35px 0 ;
+    padding: 35px 0;
   }
 
   .lower-footer > span {
