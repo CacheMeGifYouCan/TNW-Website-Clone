@@ -17,7 +17,7 @@ Our website was created with fluidity and user interaction in mind.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://mandeln.github.io/The-next-web-project/)
 
 
 ## Getting Started
