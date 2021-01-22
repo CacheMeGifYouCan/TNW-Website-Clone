@@ -84,7 +84,15 @@ footer > div > ul > li > a {
 }
 
 .social {
-  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-inline-start: 0;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  flex-wrap: wrap;
+  padding-inline-start: 35px;
 }
 
 .social a {
@@ -1282,5 +1290,11 @@ header {
   .headingElementContainer3 {
     width: 100%;
     height: 97%;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .social {
+    margin-bottom: 40px;
   }
 }
