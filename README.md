@@ -7,9 +7,15 @@
 ![screenshot](./app_screenshot.png)
 
 Good day world
+
+
 Lets welcome one more code in the line of many more to come during our time here at Microverse.
+
+
                                                                             -Matija Maksimovic
 Our website was created with fluidity and user interaction in mind.
+
+
 please enjoy!
 
 ## Built With
