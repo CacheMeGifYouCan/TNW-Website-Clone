@@ -71,9 +71,9 @@ Use a code editor to make any changes or use your browser to access the website 
 
 👤 **Author2**
 
-- GitHub: [@CacheMeGifYouCan](https://github.com/CacheMeGifYouCan)
-- Twitter: [@CacheMeGifYouCan](https://twitter.com/CacheMeGifYouCan)
-- LinkedIn: [CacheMeGifYouCan](https://linkedin.com/CacheMeGifYouCan)
+- GitHub: [@CacheMeGifYouCan](https://github.com/marcusal)
+- Twitter: [@CacheMeGifYouCan](https://twitter.com/marcusal)
+- LinkedIn: [CacheMeGifYouCan](https://linkedin.com/marcusal)
 
 ## 🤝 Contributing
 
